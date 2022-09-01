@@ -6,3 +6,4 @@
 ชื่อโครงงานภาษาอังกฤษ : TU Shop Online\
 หมายเลขโครงงาน : CN12
 
+## [ข้อเสนอโครงงาน](https://github.com/boykingkao/TU_Project/blob/main/CN12-proposal.pdf)
