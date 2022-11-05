@@ -9,6 +9,6 @@
 ## [แนวคิดหัวข้อโครงงาน](https://github.com/boykingkao/TU_Project/blob/main/TU-Shop(Web%20E-commerce).pdf)
 ## [ข้อเสนอโครงงาน](https://github.com/boykingkao/TU_Project/blob/main/CN12-proposal.pdf)
 
-## Profress
+## Progress
 * 29/10/2565 เรียนรู้เกี่ยวกับเบื้องต้นของ ReactJS
 * 06/11/2565
