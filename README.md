@@ -10,5 +10,5 @@
 ## [ข้อเสนอโครงงาน](https://github.com/boykingkao/TU_Project/blob/main/CN12-proposal.pdf)
 
 ## Profress
-** 29/10/2565
-** 06/11/2565
+* 29/10/2565 เรียนรู้เกี่ยวกับเบื้องต้นของ ReactJS
+* 06/11/2565
