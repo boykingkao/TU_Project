@@ -14,8 +14,9 @@
 ## Progress
 * 29/10/2565 เรียนรู้เกี่ยวกับเบื้องต้นของ ReactJS
 * 06/11/2565 ลองเปิดเซิฟเวอร์ NodeJS และ ReactJS (ยังไม่ได้เชื่อมต่อกัน)
-* 08/11/2565 ทำฝั่ง backend (nodejs) ให้มีการเชื่อมต่อกับ Mongodb Atlas (เป็นแบบ cloud)
-** https://youtu.be/pCmMsXj7BtM
+* [08/11/2565 ทำฝั่ง backend (nodejs) ให้มีการเชื่อมต่อกับ Mongodb Atlas (เป็นแบบ cloud)](https://youtu.be/pCmMsXj7BtM)
+* [02/08/2565 ทำระบบ login ผ่าน google โดยใช้ OAuth 2.0](https://www.youtube.com/watch?v=m0uOlIkxeWo)
+
 
 ## Goal เป้าหมายที่จะทำ
 * ภายใน 13/11/2565 จะทำการเชื่อมต่อ backend กับ frontend เข้าด้วยกัน 
