@@ -15,7 +15,11 @@
 * 29/10/2565 เรียนรู้เกี่ยวกับเบื้องต้นของ ReactJS
 * 06/11/2565 ลองเปิดเซิฟเวอร์ NodeJS และ ReactJS (ยังไม่ได้เชื่อมต่อกัน)
 * [08/11/2565 ทำฝั่ง backend (nodejs) ให้มีการเชื่อมต่อกับ Mongodb Atlas (เป็นแบบ cloud)](https://youtu.be/pCmMsXj7BtM)
-* [02/08/2565 ทำระบบ login ผ่าน google โดยใช้ OAuth 2.0](https://www.youtube.com/watch?v=m0uOlIkxeWo)
+* [08/02/2566 ทำระบบ login ผ่าน google โดยใช้ OAuth 2.0](https://www.youtube.com/watch?v=m0uOlIkxeWo)
+* [update 3 13/02/2566](https://www.youtube.com/watch?v=m0uOlIkxeWo)
+  - Routing pages
+  - Show products from database (mock up database)
+  - localStorage imprement with Oauth login
 
 
 ## Goal เป้าหมายที่จะทำ
