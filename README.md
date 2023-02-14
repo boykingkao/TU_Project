@@ -20,6 +20,10 @@
   - Routing pages
   - Show products from database (mock up database)
   - localStorage imprement with Oauth login
+* [update 4 14/02/2566](https://www.youtube.com/watch?v=8-I_huoJ1Ao)
+  - Nested Routing
+  - Individual Product page
+  - Profile page
 
 
 ## Goal เป้าหมายที่จะทำ
