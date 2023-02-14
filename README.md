@@ -24,6 +24,7 @@
   - Nested Routing
   - Individual Product page
   - Profile page
+  - Fetching APIs from backend
 
 
 ## Goal เป้าหมายที่จะทำ
