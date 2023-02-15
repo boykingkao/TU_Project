@@ -29,7 +29,7 @@
   - Deployed Front-end to Netlify
   - Using Ngrok for forwarding localhost to make localhost to be fetched api from Netlify Front-end
 
-
+# [Website](https://cheerful-maamoul-b0a3e6.netlify.app/)
 
 ## Goal เป้าหมายที่จะทำ
 * ภายใน 13/11/2565 จะทำการเชื่อมต่อ backend กับ frontend เข้าด้วยกัน 
