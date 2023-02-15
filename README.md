@@ -25,6 +25,10 @@
   - Individual Product page
   - Profile page
   - Fetching APIs from backend
+* [update 5 16/02/2566](https://www.youtube.com/watch?v=8-I_huoJ1Ao)
+  - Deployed Front-end to Netlify
+  - Using Ngrok for forwarding localhost to make localhost to be fetched api from Netlify Eront-end
+
 
 
 ## Goal เป้าหมายที่จะทำ
