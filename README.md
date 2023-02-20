@@ -28,7 +28,7 @@
 * [update 5 16/02/2566](https://youtu.be/5LXR1I7oUfY)
   - Deployed Front-end to Netlify
   - Using Ngrok for forwarding localhost to make localhost to be fetched api from Netlify Front-end
- * [update 6 02/20/2566](https://www.youtube.com/watch?v=DbXlhgcBT_Q)
+* [update 6 02/20/2566](https://www.youtube.com/watch?v=DbXlhgcBT_Q)
   - Show all Product data in home page from database
   - Adding product page into database
 
