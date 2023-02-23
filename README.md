@@ -11,6 +11,7 @@
 ## [รายงานการค้นคว้าเบื้องต้น](https://github.com/boykingkao/TU_Project/blob/main/CN12-preliminar.pdf)
 ## [รายงานความคืบหน้าโครงงาน 1](https://github.com/boykingkao/TU_Project/blob/main/CN12-progress1.pdf)
 ## [คลิปนำเสนอความคืบหน้าโครงงาน 1](https://www.youtube.com/watch?v=Q-wj2QsF45c)
+## [รายงานความคืบหน้าโครงงาน 2](https://github.com/boykingkao/TU_Project/blob/main/CN12-progress2.pdf)
 ## Progress
 * 29/10/2565 เรียนรู้เกี่ยวกับเบื้องต้นของ ReactJS
 * 06/11/2565 ลองเปิดเซิฟเวอร์ NodeJS และ ReactJS (ยังไม่ได้เชื่อมต่อกัน)
