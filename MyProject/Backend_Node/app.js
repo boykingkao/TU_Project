@@ -14,7 +14,7 @@ var productsRouter = require('./routes/products');
 var cors = require('cors')
 var app = express();
 
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var Product = require('./models/products')
 
 
@@ -39,14 +39,14 @@ app.use('/about', aboutRouter)
 app.use('/products', productsRouter)
 
 // const mongo_url = "mongodb+srv://boykingkao:1020304050@cluster0.uz8bm14.mongodb.net/test"
-mongoose.set('strictQuery', true)
+// mongoose.set('strictQuery', true)
 
-mongoose.connect(process.env.MONGODB_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  })
-  .then(() => console.log('Connected to MongoDB...'))
-  .catch(err => console.error('Could not connect to MongoDB...',err));
+// mongoose.connect(process.env.MONGODB_URL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   })
+//   .then(() => console.log('Connected to MongoDB...'))
+//   .catch(err => console.error('Could not connect to MongoDB...',err));
 
 
 

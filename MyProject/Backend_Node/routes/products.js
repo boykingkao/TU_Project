@@ -5,8 +5,8 @@ const upload = multer({ dest: "uploads/" });
 
 
 var data = require('../public/data/products_data.js');
-var mongoose = require('mongoose');
-var Product = require('../models/products')
+// var mongoose = require('mongoose');
+// var Product = require('../models/products')
 var { addDoc, query, orderBY, getDocs } = require("firebase/firestore");
 var { products_col, wow } = require('../functions/firebase')
 var { getStorage, ref, uploadString, listAll, getDownloadURL } = require('firebase/storage');
@@ -70,9 +70,9 @@ router.get('/test', function (req, res, next) {
 // /product/get
 router.get('/getDoc', async function (req, res, next) {
   console.log("you called get product api")
-  let products = await Product.find();
-  console.log(products)
-  res.json(products);
+  // let products = await Product.find();
+  // console.log(products)
+  // res.json(products);
 });
 
 router.post('/detail', function (req, res, next) {
