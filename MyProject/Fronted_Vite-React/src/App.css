@@ -1,0 +1,44 @@
+.ce-message-bubble {
+ 
+  /* background-color: green !important;*/
+}
+
+.ce-message-and-date
+{
+  /* background-color: green; */
+  
+}
+
+.ce-chat-title-text {
+  /* background-color: blue; */
+  
+}
+
+/* ::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25em;
+} */
+
+
+
+
+
+nav {
+  background-color: blanchedalmond;
+  
+  font: 1.5rem/1.5 Arial, Helvetica, sans-serif;
+
+  display: flex;
+  
+  justify-content: space-around;
+}

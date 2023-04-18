@@ -1,0 +1,110 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+const ngrok = require('ngrok');
+var app = require('../app');
+var debug = require('debug')('backend-vite-react:server');
+var http = require('http');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+// port ของ server
+var port = normalizePort(process.env.PORT || '3000');
+console.log("http://localhost:" + port + "/")
+
+// where is process.env.PORT location?
+
+
+app.set('port', port);
+
+(async function() {
+  const url = await ngrok.connect(port, { 
+    subdomain: "69b1-2001-fb1-61-7ead-6c88-a0b3-b168-4887",
+    authtoken: "2EyKLw7wSJxeOyGdizndswCtEML_3z2QpCq9MhAi5Hw7rKc6R" })
+  console.log(`ngrok tunnel started at ${url}`);
+})();
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+// var server1 = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+// for ngrok
+// server1.listen(port+1);
+// server1.on('error', onError);
+// server1.on('listening', onListening);
+
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
