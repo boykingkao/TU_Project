@@ -1,7 +1,7 @@
 // rfce
 import React from 'react'
 import { useLocation, useNavigate, Link } from 'react-router-dom'
-import { gapi } from 'gapi-script'
+
 
 import GithubLogo from '../images/GithubLogo.png'
 

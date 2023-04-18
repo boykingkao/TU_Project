@@ -8,7 +8,7 @@ var data = require('../public/data/products_data.js');
 // var mongoose = require('mongoose');
 // var Product = require('../models/products')
 var { addDoc, query, orderBY, getDocs } = require("firebase/firestore");
-var { products_col, wow } = require('../functions/firebase')
+var { products_col, wow } = require('../firebasefunctions/firebase')
 var { getStorage, ref, uploadString, listAll, getDownloadURL } = require('firebase/storage');
 
 

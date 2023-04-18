@@ -10,19 +10,15 @@
     "netlify": "vite build && netlify deploy --prod --dir=dist"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.0.1",
+    "@rollup/plugin-commonjs": "^24.1.0",
     "axios": "^1.3.2",
     "buffer": "^6.0.3",
     "firebase": "^9.19.1",
-    "gapi-script": "^1.2.0",
     "react": "^18.2.0",
-    "react-chat-engine": "^1.11.28",
-    "react-chat-engine-advanced": "^0.1.28",
+    "react-chat-engine": "^1.8.13",
     "react-dom": "^18.2.0",
-    "react-google-login": "^5.2.2",
     "react-router-dom": "^6.8.1",
-    "react-toastify": "^9.1.1",
-    "socket.io-client": "^4.6.1"
+    "react-toastify": "^9.1.1"
   },
   "devDependencies": {
     "@types/node": "^18.14.0",

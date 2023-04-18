@@ -5,7 +5,6 @@ import { BrowserRouter, NavLink, Routes, Route, Navigate, Link } from "react-rou
 
 
 // Pages
-import Login from "./components/Login"
 
 import TU_Login from "./components/TU_Login"
 import About from "./components/About"

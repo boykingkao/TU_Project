@@ -5,7 +5,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "node ./bin/www",
-    "netlify": "netlify dev"
+    "netlify": "netlify dev",
+    "dev": "nodemon ./bin/www",
+    "build": "npm i"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

@@ -8,7 +8,6 @@ import { auth, provider, users, db } from '../firebase'
 import { doc, addDoc, collection, query, where, getDocs, deleteDoc } from 'firebase/firestore'
 import ChatengineCreateUser from '../chatengineAPI/CreateUser';
 
-import Login from "./Login"
 import App from "../App"
 
 
@@ -70,7 +69,7 @@ function TU_Login() {
 
         
 
-        // navigate("/")
+        navigate("/login_firebase")
 
     }
 
@@ -148,10 +147,10 @@ function TU_Login() {
             <form action='' className='text-center '>
                 {/* username */}
 
-                <input className="border-2 text-lg border-black placeholder:text-center" type="text" name="username" placeholder="username" />
+                <input className=" px-4 border-2 text-lg border-black  text-start placeholder:text-center" type="text" name="username" placeholder="username" />
                 <br />
                 {/* password */}
-                <input className="border-2 text-lg border-black my-2 placeholder:text-center" type="password" name="password" placeholder="password" />
+                <input className=" px-4 border-2 text-lg border-black my-2 placeholder:text-center" type="password" name="password" placeholder="password" />
 
                 <br />
                 {/* submit */}
