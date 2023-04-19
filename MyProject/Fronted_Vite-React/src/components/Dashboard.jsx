@@ -33,9 +33,9 @@ function Dashboard() {
             });
             setMyProducts(myProducts);
         }
-        if (myId) {
-            getProducts();
-        }
+
+        getProducts();
+
 
         async function getUsers() {
             const querySnapshot = await getDocs(users);
@@ -166,21 +166,21 @@ function Dashboard() {
                                 </tr>
                             </thead>
                             <tbody className="text-gray-700">
-                            {allUsers
+                                {allUsers
                                     .filter((user, i) =>
                                         searchUser.toLocaleLowerCase().trim() === "" ? user :
                                             Object.values(user).some(prop =>
                                                 prop.toString().toLowerCase().includes(searchUser.toLowerCase().trim())
                                             )
                                     ).map((item, index) => (
-                                    <tr key={index}>
-                                        <td className="w-1/3 text-left py-3 px-4">{item.name ? item.name : item.displayname_th}</td>
-                                        <td className="w-1/3 text-left py-3 px-4">{item.userType}</td>
-                                        <td className="text-left py-3 px-4">{item.email}</td>
-                                        <td className="text-left py-3 px-4">{item.userId}</td>
-                                        <td className="w-1/12 text-left py-3 px-4 "><img className="hover:cursor-pointer max-w-[36px]" src={Edit} onClick={() => RedirecProfilePage(item.userId)} /></td>
-                                    </tr>
-                                ))}
+                                        <tr key={index}>
+                                            <td className="w-1/3 text-left py-3 px-4">{item.name ? item.name : item.displayname_th}</td>
+                                            <td className="w-1/3 text-left py-3 px-4">{item.userType}</td>
+                                            <td className="text-left py-3 px-4">{item.email}</td>
+                                            <td className="text-left py-3 px-4">{item.userId}</td>
+                                            <td className="w-1/12 text-left py-3 px-4 "><img className="hover:cursor-pointer max-w-[36px]" src={Edit} onClick={() => RedirecProfilePage(item.userId)} /></td>
+                                        </tr>
+                                    ))}
                             </tbody>
                         </table>
                     </div>

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 function MyProducts() {
     const [myProducts, setMyProducts] = useState([])
-    const [myId, setMyId] = useState(localStorage.getItem('user_id'))
+    const [myId, setMyId] = useState(null)
     const navigate = useNavigate()
 
     useEffect(() => {

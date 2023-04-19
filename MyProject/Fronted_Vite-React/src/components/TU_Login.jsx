@@ -20,7 +20,7 @@ function TU_Login() {
     }, [])
 
     async function onSuccessLogin(user) {
-        
+
         ToastEmitter("login Success....")
         localStorage.setItem("user_data", JSON.stringify(user))
 
@@ -61,15 +61,15 @@ function TU_Login() {
                 });
             }
 
-            // window.location.reload()
+            window.location.reload()
 
 
 
         });
 
-        
 
-        navigate("/login_firebase")
+        console.log("lol")
+        navigate("/myproducts")
 
     }
 
@@ -139,7 +139,7 @@ function TU_Login() {
 
     return (
 
-        <div className="w-fit mx-auto "  onSubmit={(e) => { handleSubmit(e) }}>
+        <div className="w-fit mx-auto " onSubmit={(e) => { handleSubmit(e) }}>
 
             <h1 className="text-4xl  text-center font-bold text-black ">TU Login</h1><br />
 

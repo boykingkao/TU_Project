@@ -55,7 +55,7 @@ function App() {
 
     { path: "/login_firebase", name: "Login" },
     { path: "/dashboard", name: "Dashboard" },
-    { path: "/myProducts", name: "MyProducts" },
+    { path: "/myproducts", name: "MyProducts" },
 
 
 
@@ -98,7 +98,7 @@ function App() {
           <Route path="/chat" element={loggedIn ? <Chat /> : <Navigate to="/login_firebase" />} />
           <Route path="/TU_login" element={<TU_Login />} />
           <Route path="/login_firebase" element={<Firebase_auth />} />
-          <Route path="/myProducts" element={loggedIn ? <MyProducts /> :  <Navigate to="/login_firebase" />} />
+          <Route path="/myproducts" element={loggedIn ? <MyProducts /> :  <Navigate to="/login_firebase" />} />
           <Route path="*" element={<Error />} />
 
 
