@@ -1,5 +1,7 @@
 # TU_Project
 
+# [Project Website](https://tu-project-shop.web.app/)
+
 ชื่อนักศึกษาผู้ทำโครงงาน : นายสุเมต คงแก้ว 6210612559 คณะวิศวกรรมศาสตร์ สาขาคอมพิวเตอร์\
 อาจารย์ที่ปรึกษา : อ.ดร. ชุมพล บุญมี\
 ชื่อโครงงานภาษาไทย : ร้านค้ามหาวิทยาลัยธรรมศาสตร์ ออนไลน์\
@@ -32,8 +34,15 @@
 * [update 6 02/20/2566](https://www.youtube.com/watch?v=DbXlhgcBT_Q)
   - Show all Product data in home page from database
   - Adding product page into database
-
-# [Website](https://cheerful-maamoul-b0a3e6.netlify.app/)
+* [update 7 04/05/2566](https://www.youtube.com/watch?v=z2g47PYoZy0)
+  - Using TailwindCSS 
+  - TU API login Option
+* [update 8 04/19/2566](https://www.youtube.com/watch?v=irqbadRMFPg)
+  - Using Firebase Services ( database, storage, hosting, authentication).
+  - Using Render render.com to deploy Back-end(Nodejs)
+  - Deployed project.
+  - **Not using MongoDB anymore.**
+  - **Not using Ngrok anymore.**
 
 ## Goal เป้าหมายที่จะทำ
 * ภายใน 13/11/2565 จะทำการเชื่อมต่อ backend กับ frontend เข้าด้วยกัน 
