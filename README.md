@@ -1,6 +1,6 @@
 # TU_Project
 
-[Project Website](https://tu-project-shop.web.app/)
+# [Project Website](https://tu-project-shop.web.app/)
 
 ชื่อนักศึกษาผู้ทำโครงงาน : นายสุเมต คงแก้ว 6210612559 คณะวิศวกรรมศาสตร์ สาขาคอมพิวเตอร์\
 อาจารย์ที่ปรึกษา : อ.ดร. ชุมพล บุญมี\
@@ -41,8 +41,6 @@
   - Deployed project.
   - **Not using MongoDB anymore.**
   - **Not using Ngrok anymore.**
-
-# [Website](https://cheerful-maamoul-b0a3e6.netlify.app/)
 
 ## Goal เป้าหมายที่จะทำ
 * ภายใน 13/11/2565 จะทำการเชื่อมต่อ backend กับ frontend เข้าด้วยกัน 
