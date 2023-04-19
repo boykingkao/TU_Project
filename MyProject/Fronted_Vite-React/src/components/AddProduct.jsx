@@ -83,10 +83,12 @@ function AddProduct() {
       imageName: file.name,
       detail: document.getElementById("detail").value,
       price: document.getElementById("price").value,
-      owner: localStorage.getItem("user_id") ? localStorage.getItem("user_id") : "mock-up owner"
+      owner: localStorage.getItem("user_id")
     }
-
-    axios.post("http://localhost:3000/products/add", {
+    // http://localhost:3000/products/add
+    const render_url = "https://tu-shop-backend.onrender.com"
+    const env_url = import.meta.env.URL
+    axios.post(`${render_url}/products/add`, {
       productData: productData,
       imageFile: productImage
     }
@@ -153,7 +155,7 @@ function AddProduct() {
                   placeholder="ชื่อสินค้า"
                   defaultValue=""
                   className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  onChange={(e) => document.getElementById("productName").innerHTML = e.target.value}
+                  
                 />
               </div>
               <div className="mb-2 flex">

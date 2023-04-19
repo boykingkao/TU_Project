@@ -19,15 +19,18 @@ function Home() {
     const navigate = useNavigate();
     const [search, setSearch] = useState("")
 
-    const url = "http://localhost:3000"
+    
+
     const ngrok_url = "https://48ff-2001-fb1-61-7ead-4b78-ead1-6062-4dd5.ap.ngrok.io"
+    const render_url = "https://tu-shop-backend.onrender.com"
+    const env_url = import.meta.env.URL
     const headers = {
         'Bypass-Tunnel-Reminder': 'Gohza',
         "ngrok-skip-browser-warning": "true"
     };
 
     useEffect(() => {
-        axios.get(`${url}/products`, { headers })
+        axios.get(`${render_url}/products`, { headers })
             .then(async (res) => {
                 console.log('fetch data from server');
                 const storage = getStorage();

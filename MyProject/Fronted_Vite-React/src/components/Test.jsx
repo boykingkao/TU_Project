@@ -9,6 +9,7 @@ function Test() {
     const [product_data, setProduct_data] = useState([])
     const gohza = import.meta.env.VITE_SOME_KEY
     const gohza1 = JSON.stringify(import.meta.env.VITE_DB_PASSWORD)
+   
 
     function handleInput(e) {
         console.log(e.target.value)
