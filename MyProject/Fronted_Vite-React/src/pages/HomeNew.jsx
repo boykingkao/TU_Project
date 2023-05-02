@@ -83,16 +83,20 @@ function Home() {
 
 
     const listItem = product_data.filter((product, i) => search.toLocaleLowerCase().trim() === "" ? product : product.name.includes(search)).map((product, i) =>
-        <div className="bg-green-50 border-4 border-green-600 p-5 mx-4 shadow-2xl hover:border-red-500 cursor-pointer  " key={i}
+        <div className="bg-green-50 border-4 p-5 mx-4 shadow-2xl hover:border-red-500 cursor-pointer" key={i}
             onClick={() => handleProductPage(product)} >
             <div className="">
                 <div className="bg-white w-48 h-48 mx-auto mb-8">
                     <img className=" w-full h-full outline outline-4 outline-black hover:outline-yellow-400"
                         src={product.imageURL ? product.imageURL : product_Default}
+                        alt={product.name}
                     />
                 </div>
-                <div className="w-fit mx-auto">
-                    {product.name}
+                <div className="w-fit mx-auto ">
+                    <p className='text-xl my-2'>{product.name}</p>
+                </div>
+                <div className="w-fit mx-auto ">
+                    <p className=''>{product.price}฿</p>
                 </div>
 
 

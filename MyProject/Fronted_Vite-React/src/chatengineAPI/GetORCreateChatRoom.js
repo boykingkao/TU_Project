@@ -23,7 +23,7 @@ function CreateRoom(user1 = "user1", user2 = "user2") {
         maxBodyLength: Infinity,
         url: 'https://api.chatengine.io/chats/',
         headers: {
-            'Project-ID': '82aabb46-60e7-416d-81de-705edb5e7724',
+            'Project-ID': '416cc367-326f-4b07-a1c9-2905a6c79b7f',
             'User-Name': user1,
             'User-Secret': '123456789',
             'Content-Type': 'application/json'

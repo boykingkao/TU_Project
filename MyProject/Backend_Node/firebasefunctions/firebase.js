@@ -16,6 +16,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const products_col = collection(db, "products");
+const users_col = collection(db, "uers");
 
 // const wow = () => 50
 
@@ -23,4 +24,4 @@ function wow () {
   return 100}
 
 
-module.exports = { db, products_col , wow};
+module.exports = { db, products_col,users_col , wow};

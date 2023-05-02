@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.transform.rotate-180 > svg {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -3,11 +3,11 @@ import axios from 'axios';
 function ChatengineCreateUser(
     username = "default_usernmae",
     email = "default_email@test.come",
-    first_name="default_firstname",
-    last_name="default_lastname",
+    first_name = "default_firstname",
+    last_name = "default_lastname",
     secret = "123456789"
-    ) {
-        
+) {
+
     let data =
     {
         "username": `${username}`,
@@ -17,14 +17,14 @@ function ChatengineCreateUser(
         "email": `${email}`
     }
 
-    
+
 
     let config = {
-        method: 'post',
+        method: 'put',
         maxBodyLength: Infinity,
         url: 'https://api.chatengine.io/users/',
         headers: {
-            'PRIVATE-KEY': 'b2ac2462-ac8c-4b48-87d6-37d5c5439622',
+            'PRIVATE-KEY': '9479f440-5094-4c94-9005-c93a43888e81',
             'Content-Type': 'application/json'
         },
         data: data

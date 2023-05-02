@@ -27,9 +27,7 @@ function uploadImageToFirebase(image, newfileName) {
 // /product
 router.get('/', async function (req, res, next) {
   try {
-    // find data from mongodb
-    
-
+ 
     const storage = getStorage();
     var docs_data = [];
 
@@ -53,10 +51,8 @@ router.get('/', async function (req, res, next) {
 });
 
 router.get('/:id', function (req, res, next) { 
-  console.log("you called choose product api")
-  console.log("detail api")
-  console.log(`object id is : ${req.params.id}`)
- 
+
+  
   res.send(req.params.id)
 
 })

@@ -69,11 +69,14 @@ function Firebase_auth() {
                         });
                     }
 
-
+                    localStorage.setItem("user_data", JSON.stringify(user))
+                    ToastEmitter("Login Success")
+                    navigate("/")
 
                 });
-                ToastEmitter("Login Success")
-                localStorage.setItem("user_data", JSON.stringify(user))
+                
+                
+                
 
 
                 // navigate("/")

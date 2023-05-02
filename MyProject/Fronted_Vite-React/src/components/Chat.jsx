@@ -4,63 +4,66 @@ import { ChatEngine, getOrCreateChat, ChatList } from 'react-chat-engine';
 import axios from 'axios'
 // import css
 import '../App.css';
-
+import { auth, provider, users, db } from '../firebase'
+import { doc, getDoc, collection, query, where, getDocs, deleteDoc } from 'firebase/firestore'
 import ChatengineCreateUser from '../chatengineAPI/CreateUser'
 import CreateRoom from '../chatengineAPI/GetORCreateChatRoom'
 
 
 const Chat = () => {
   const location = useLocation();
-  const [username, setUsername] = useState('')
-  const [myuser_id, setMyuser_id] = useState(localStorage.getItem("user_id"))
+  const [username, setUsername] = useState(null)
+  const [Myid, setMyid] = useState(localStorage.getItem("user_id"))
+  const [myEmail, setMyEmail] = useState(localStorage.getItem("user_data").email)
   const [sellerUsername, setSellerUsername] = useState(location.state)
 
 
 
-  function createDirectChat(creds) {
-    getOrCreateChat(
-      creds,
-      { is_direct_chat: true, usernames: [username] },
-      () => setUsername('')
-    )
-  }
+  useEffect(() => {
+    // console.log("hi")
+    // async function userData() {
+    //   const docRef = doc(users, Myid);
+    //   const docSnap = await getDoc(docRef);
+    //   if (docSnap.exists()) {
+    //     console.log("Document data:", docSnap.data());
+    //     setUsername(docSnap.id)
+    //     console.log(` username is ${username}`)
+    //     ChatengineCreateUser(docSnap.id, docSnap.data().email)
+    //   } else {
+    //     // docSnap.data() will be undefined in this case
+    //     console.log("No such document!");
+    //   }
+    // }
 
-  function renderChatHeader(creds) {
-    const people = []
-    
-    creds ? people.push(creds) : console.log("no data")
-    console.log(people[0])
+    // userData()
 
-    return (
-      <div className='bg-green-500'>
-        {JSON.stringify(people)}
-      </div>
+    ChatengineCreateUser(Myid, myEmail)
+    setUsername("")
+  }, [username])
 
 
-    )
-  }
 
 
 
   return (
     <>
-      {/* {sellerUsername ? <h1>data is : {sellerUsername}</h1> : <h1>ยังไม่ได้ data</h1>} */}
-      <div className='mx-24 border-4 border-black '>
+      <div className='lg:mx-24 md:mx-12 border-4 border-black '>
 
         <ChatEngine
           height='75vh'
-          userName={myuser_id}
+          userName={Myid}
           userSecret='123456789'
-          projectID='82aabb46-60e7-416d-81de-705edb5e7724'
+          projectID='416cc367-326f-4b07-a1c9-2905a6c79b7f'
           renderNewChatForm={(creds) => { <div></div> }}
-          // renderChatHeader={(creds) => renderChatHeader(creds)}
-          renderOptionsSettings={(creds, chat) => {<div></div> }}
-          
+          renderOptionsSettings={(creds, chat) => { <div></div> }}
+
           offset={7}
 
         />
 
       </div>
+      
+
     </>
   )
 }

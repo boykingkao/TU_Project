@@ -60,13 +60,19 @@ function Product() {
             });
 
         function checkIfUserOwner() {
-            if (SellerObjectId === localStorage.getItem("user_id")) {
+            if (SellerObjectId === localStorage.getItem("user_id") || (JSON.parse(localStorage.getItem("user_data")).userType === "admin")) {
                 document.getElementById("buy").hidden = true
                 document.getElementById("edit").hidden = false
             }else{
                 document.getElementById("buy").hidden = false
                 document.getElementById("edit").hidden = true
             }
+
+            // if  (JSON.parse(localStorage.getItem("user_data")).userType === "admin"){
+            //     document.getElementById("buy").hidden = true
+            //     document.getElementById("edit").hidden = false
+
+            // }
         }
      
         checkIfUserOwner()
@@ -197,7 +203,7 @@ function Product() {
                                 htmlFor="name"
                                 className="mt-3 mb-3 block text-base font-medium text-[#07074D]"
                             >
-                                Product Name
+                                ชื่อสินค้า
                             </label>
                             <input
                                 type="text"
@@ -214,7 +220,7 @@ function Product() {
                                 htmlFor="price"
                                 className="mb-3 block text-base font-medium text-[#07074D]"
                             >
-                                Product Price
+                                ราคา
                             </label>
                             <input
                                 type="number"
@@ -231,7 +237,7 @@ function Product() {
                                 htmlFor="owner"
                                 className="mb-3 block text-base font-medium text-[#07074D]"
                             >
-                                Seller ID
+                                ID ผู้ขาย
                             </label>
                             <input
                                 type="text"
@@ -249,7 +255,7 @@ function Product() {
                                 htmlFor="detail"
                                 className="mb-3 block text-base font-medium text-[#07074D]"
                             >
-                                Product Detail
+                                รายละเอียด
                             </label>
                             <textarea
                                 rows="4"
@@ -265,8 +271,11 @@ function Product() {
                             <label
                                 htmlFor="imageName"
                                 className="mb-3 block text-base font-medium text-[#07074D]"
+                                
+                               
+                                
                             >
-                                imageName
+                                {/* imageName */}
                             </label>
                             <input
                                 type="text"
@@ -276,6 +285,7 @@ function Product() {
                                 defaultValue={product_data.imageName}
                                 className="w-full rounded-md border border-[#e0e0e0] bg-gray-300 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                                 readOnly
+                                hidden
                             />
                         </div>
                         <div className="mb-2">
@@ -283,7 +293,7 @@ function Product() {
                                 htmlFor="ObjectId"
                                 className="mb-3 block text-base font-medium text-[#07074D]"
                             >
-                                Product ID
+                                {/* Product ID */}
                             </label>
                             <input
                                 type="text"
@@ -293,6 +303,7 @@ function Product() {
                                 defaultValue={product_data.productId}
                                 className="w-full rounded-md border border-[#e0e0e0] bg-gray-300 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                                 readOnly
+                                hidden
                             />
                         </div>
                         <div>
